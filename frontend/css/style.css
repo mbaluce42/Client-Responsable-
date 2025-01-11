@@ -1,0 +1,113 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;/*police de caractères*/
+    margin: 0;/*pas de marge*/
+    padding: 0;/*pas de marge ni de rembourrage*/
+    background-color: #f0f2f5;/*couleur de fond de la page*/
+}
+
+/* Style de la barre de navigation */
+nav {
+    background-color: #333;/*couleur de fond de la barre de navigation*/
+    padding: 1rem;/*espacement interne autour du contenu*/
+}
+
+/*permet de mettre en forme la liste de la barre de navigation*/
+.nav-menu {
+    list-style: none;/*pas de puce*/
+    padding: 0;/*pas de marge interne*/
+    margin: 0;/*pas de marge externe*/
+    display: flex;/*affichage en ligne*/
+    gap: 2rem;/*espacement entre les éléments*/
+}
+
+/*permet de mettre en forme les liens de la barre de navigation*/
+.nav-menu a {
+    color: white;/*couleur du texte*/
+    text-decoration: none;/*pas de soulignement du texte*/
+}
+
+/*permet de mettre en surbrillance le lien survolé*/
+.nav-menu a:hover {
+    background-color: #555;/*couleur de fond du lien survolé*/
+}
+
+/*permet de centrer les éléments du bloc main*/
+main {
+    padding: 2rem;/*espacement interne autour du contenu*/
+    max-width: 1200px;/*largeur maximale du bloc*/
+    margin: 0 auto;/*centrer le bloc*/
+}
+
+/* Style du tableau */
+table {
+    width: 100%;/*largeur du tableau*/
+    border-collapse: collapse;/*fusionner les bordures des cellules*/
+    margin: 1rem 0;/
+    background-color: white;/*couleur de fond du tableau*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);/*ombre portée (horizontal, vertical, flou, couleur)*/
+}
+
+/* Style des titres de colonnes du tableau */
+th, td {
+    text-align: left; /*alignement du texte à gauche*/
+    padding: 1rem;/*espacement interne autour du contenu de la cellule*/
+    border-bottom: 1px solid black; /*bordure basse de chaque cellule*/
+}
+
+/* Style des titres de colonnes du tableau */
+th {
+    background-color: #333;/*couleur de fond des titres de colonnes*/
+    color: white;/*couleur du texte des titres de colonnes*/
+}
+
+/* Formulaires */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Style des labels des formulaires */
+.form-group label {
+    display: block;/*affichage en bloc*/
+    margin-bottom: 0.5rem;/*marge basse(espacement)*/
+}
+
+/* Boutons */
+.btn-group {
+    margin-top: 1rem;/*marge haute*/
+    display: flex;/*affichage en ligne*/
+    gap: 1rem;/*espacement entre les éléments*/
+}
+
+.btn {
+    padding: 0.5rem 1rem;/*espacement interne autour du contenu*/
+    border: none;/*pas de bordure*/
+    border-radius: 4px;/*coins arrondis*/
+    cursor: pointer;/*curseur en main*/
+    font-weight: bold;/*gras*/
+}
+
+.btn-add {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.btn-edit {
+    background-color: gray;
+    color: white;
+}
+
+.btn-del {
+    background-color: red;
+    color: white;
+}
+
+.btn-search {
+    background-color: skyblue;
+    color: white;
+}
+
+.btn-clear {
+    background-color: yellow;
+    color: black;
+}

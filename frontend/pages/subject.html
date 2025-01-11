@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Gestion des Sujets</title>
+    <link href="../css/style.css" rel="stylesheet">
+
 </head>
 <body>
+<nav>
+    <ul class="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="book.html">Gérer les livres</a></li>
+        <li><a href="author.html">Gérer les auteurs</a></li>
+        <li><a href="subject.html">Gérer les sujets</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Gestion des Sujets</h1>
+    <p>Liste des Sujets:</p>
+
+    <table id="subjectsTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Informatique</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>Gestion des Sujets</p>
+    <form id="subjectForm" class="form-group">
+        <div class="form-group">
+            <label for="subjectId">ID:</label>
+            <input type="text" id="subjectId" name="subjectId" placeholder="Entrer l'ID" >
+        </div>
+
+        <div class="form-group">
+            <label for="subjectName">Nom:</label>
+            <input type="text" id="subjectName" name="subjectName" placeholder="Entrer le Nom" >
+        </div>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-add" id="addBtn" >Ajouter</button>
+            <button type="button" class="btn btn-edit" id="updateBtn">Modifier</button>
+            <button type="button" class="btn btn-del" id="deleteBtn">Supprimer</button>
+            <button type="button" class="btn btn-search"id="searchBtn">Rechercher</button>
+            <button type="reset" class="btn btn-clear" >vider les champs</button>
+        </div>
+    </form>
+
+
+
+</main>
+
+
 
 </body>
 </html>

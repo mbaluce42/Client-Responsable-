@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Gestion des Auteur</title>
+  <link href="../css/style.css" rel="stylesheet">
+
 </head>
 <body>
+<nav>
+  <ul class="nav-menu">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="book.html">Gérer les livres</a></li>
+    <li><a href="author.html">Gérer les auteurs</a></li>
+    <li><a href="subject.html">Gérer les sujets</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Gestion des Auteur</h1>
+  <p>Liste des Auteur:</p>
+
+  <table id="authorTable">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Date de naissance(AAAA-MM-JJ)</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mbaya</td>
+      <td>Luce</td>
+      <td>2002-09-23</td>
+    </tr>
+    <!-- Données de la table seront ajoutées dynamiquement par JavaScript -->
+    </tbody>
+  </table>
+
+  <p>Gestion des Auteur</p>
+  <form id="authorForm" class="form-group">
+    <div class="form-group">
+      <label for="authorId">ID:</label>
+      <input type="text" id="authorId" name="authorId" placeholder="Entrer l'ID" >
+    </div>
+
+    <div class="form-group">
+      <label for="authorName">Nom:</label>
+      <input type="text" id="authorName" name="authorName" placeholder="Entrer le Nom" >
+    </div>
+
+    <div class="form-group">
+      <label for="authorFirstName">Prénom:</label>
+      <input type="text" id="authorFirstName" name="authorFirstName" placeholder="Entrer le Prénom" >
+    </div>
+
+    <div class="form-group">
+      <label for="authorBirthDate">Date de naissance:</label>
+      <input type="text" id="authorBirthDate" name="authorBirthDate" placeholder="Entrer la date de naissance(AAAA-MM-JJ)" >
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-add" id="addBtn" >Ajouter</button>
+      <button type="button" class="btn btn-edit" id="updateBtn">Modifier</button>
+      <button type="button" class="btn btn-del" id="deleteBtn">Supprimer</button>
+      <button type="button" class="btn btn-search"id="searchBtn">Rechercher</button>
+      <button type="reset" class="btn btn-clear" >vider les champs</button>
+    </div>
+  </form>
+</main>
+
+
 
 </body>
 </html>

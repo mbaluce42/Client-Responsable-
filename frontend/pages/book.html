@@ -1,10 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Gestion des Livres</title>
+  <link href="../css/style.css" rel="stylesheet">
+
 </head>
 <body>
+      <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="book.html">Gérer les livres</a></li>
+            <li><a href="author.html">Gérer les auteurs</a></li>
+            <li><a href="subject.html">Gérer les sujets</a></li>
+          </ul>
+      </nav>
+
+      <main>
+            <h1>Gestion des Livres</h1>
+            <p>Liste des Livres:</p>
+
+            <table id="booksTable">
+                  <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Titre</th>
+                          <th>Auteur</th>
+                          <th>Sujet</th>
+                          <th>ISBN</th>
+                          <th>Nombre de pages</th>
+                          <th>Quantité en stock</th>
+                          <th>Prix</th>
+                          <th>Année de publication</th>
+                        </tr>
+                  </thead>
+
+                  <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Le Seigneur des Anneaux</td>
+                          <td>J.R.R. Tolkien</td>
+                          <td>Fantasy</td>
+                          <td>978-2070612889</td>
+                          <td>1216</td>
+                          <td>5</td>
+                          <td>20.00</td>
+                          <td>1954</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Harry Potter à l'école des sorciers</td>
+                          <td>J.K. Rowling</td>
+                          <td>Fantasy</td>
+                          <td>978-2070612360</td>
+                          <td>320</td>
+                          <td>3</td>
+                          <td>15.00</td>
+                          <td>1997</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Le Petit Prince</td>
+                          <td>Antoine de Saint-Exupéry</td>
+                          <td>Conte philosophique</td>
+                          <td>978-2070612759</td>
+                          <td>96</td>
+                          <td>7</td>
+                          <td>5.00</td>
+                          <td>1943</td>
+                        </tr>
+                  </tbody>
+            </table>
+
+            <p>Gestion des Livres</p>
+            <form id="bookForm" class="form-group">
+                  <div class="form-group">
+                    <label for="bookId">ID:</label>
+                    <input type="text" id="bookId" name="bookId" placeholder="Entrer l'ID" >
+                  </div>
+
+                    <div class="form-group">
+                    <label for="bookTitle">Titre:</label>
+                    <input type="text" id="bookTitle" name="bookTitle" placeholder="Entrer le Titre" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookAuthor">Auteur:</label>
+                    <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Entrer l'Auteur" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookSubject">Sujet:</label>
+                    <input type="text" id="bookSubject" name="bookSubject" placeholder="Entrer le Sujet" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookISBN">ISBN:</label>
+                    <input type="text" id="bookISBN" name="bookISBN" placeholder="Entrer l'ISBN" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookPages">Nombre de pages:</label>
+                    <input type="text" id="bookPages" name="bookPages" placeholder="Entrer le Nombre de pages" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookStock">Quantité en stock:</label>
+                    <input type="text" id="bookStock" name="bookStock" placeholder="Entrer la Quantité en stock" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookPrice">Prix:</label>
+                    <input type="text" id="bookPrice" name="bookPrice" placeholder="Entrer le Prix" >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="bookYear">Année de publication:</label>
+                    <input type="text" id="bookYear" name="bookYear" placeholder="Entrer l'Année de publication" >
+                    </div>
+
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-add" id="addBtn" >Ajouter</button>
+                    <button type="button" class="btn btn-edit" id="updateBtn">Modifier</button>
+                    <button type="button" class="btn btn-del" id="deleteBtn">Supprimer</button>
+                    <button type="button" class="btn btn-search" id="searchBtn">Rechercher</button>
+                    <button type="reset" class="btn btn-clear" >vider les champs</button>
+                    </div>
+            </form>
+      </main>
 
 </body>
 </html>

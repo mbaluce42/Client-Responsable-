@@ -20,6 +20,8 @@
     <h1>Gestion des Sujets</h1>
     <p>Liste des Sujets:</p>
 
+    <div id="mesageBox" class="messageBox"></div>
+
     <table id="subjectsTable">
         <thead>
         <tr>
@@ -29,10 +31,7 @@
         </thead>
 
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>Informatique</td>
-        </tr>
+        <!-- Données de la table seront ajoutées dynamiquement par JavaScript -->
         </tbody>
     </table>
 
@@ -45,22 +44,20 @@
 
         <div class="form-group">
             <label for="subjectName">Nom:</label>
-            <input type="text" id="subjectName" name="subjectName" placeholder="Entrer le Nom" >
+            <input type="text" id="subjectName" name="subjectName" placeholder="Entrer le Nom" required>
         </div>
 
         <div class="btn-group">
             <button type="button" class="btn btn-add" id="addBtn" >Ajouter</button>
             <button type="button" class="btn btn-edit" id="updateBtn">Modifier</button>
             <button type="button" class="btn btn-del" id="deleteBtn">Supprimer</button>
-            <button type="button" class="btn btn-search"id="searchBtn">Rechercher</button>
+            <button type="button" class="btn btn-search" id="searchBtn">Rechercher</button>
             <button type="reset" class="btn btn-clear" >vider les champs</button>
         </div>
     </form>
-
-
-
 </main>
-
+<!-- Ajout du script avec type="module" -->
+<script type="module" src="../js/subject.js"></script>
 
 
 </body>

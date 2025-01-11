@@ -61,6 +61,18 @@ th {
     color: white;/*couleur du texte des titres de colonnes*/
 }
 
+/* Style des champs de saisie */
+input[type="text"],
+input[type="date"] {
+    width: 100%; /* Utilise toute la largeur disponible */
+    padding: 12px 15px; /* Augmente la hauteur avec le padding */
+    font-size: 16px; /* Taille du texte plus grande */
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+    margin-bottom: 15px; /* Espace sous le champ */
+}
+
 /* Formulaires */
 .form-group {
     margin-bottom: 1rem;

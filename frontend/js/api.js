@@ -103,16 +103,6 @@ class API
         return this.makeRequest('GET', `${API_BASE_URL}/authors?lastName=${lastname}&firstName=${firstname}`);
     }
 
-    static getAuthorByLastname(lastname)
-    {
-        return this.makeRequest('GET', `${API_BASE_URL}/authors?lastname=${lastname}`);
-    }
-
-    static getAuthorByFirstname(firstname)
-    {
-        return this.makeRequest('GET', `${API_BASE_URL}/authors?firstname=${firstname}`);
-    }
-
     static createAuthor(data)
     {
         return this.makeRequest('POST', `${API_BASE_URL}/authors`, data);
@@ -139,6 +129,11 @@ class API
     static getBookById(id)
     {
         return this.makeRequest('GET', `${API_BASE_URL}/books?id=${id}`);
+    }
+
+    static getBookByTitle(title)
+    {
+        return this.makeRequest('GET', `${API_BASE_URL}/books?title=${title}`);
     }
 
     static createBook(data)

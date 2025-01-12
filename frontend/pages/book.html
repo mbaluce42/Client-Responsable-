@@ -18,7 +18,7 @@
 
       <main>
             <h1>Gestion des Livres</h1>
-            <p>Liste des Livres:</p>
+            <p>Liste des Livres :</p>
 
             <table id="booksTable">
                   <thead>
@@ -47,28 +47,8 @@
                           <td>20.00</td>
                           <td>1954</td>
                         </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Harry Potter à l'école des sorciers</td>
-                          <td>J.K. Rowling</td>
-                          <td>Fantasy</td>
-                          <td>978-2070612360</td>
-                          <td>320</td>
-                          <td>3</td>
-                          <td>15.00</td>
-                          <td>1997</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Le Petit Prince</td>
-                          <td>Antoine de Saint-Exupéry</td>
-                          <td>Conte philosophique</td>
-                          <td>978-2070612759</td>
-                          <td>96</td>
-                          <td>7</td>
-                          <td>5.00</td>
-                          <td>1943</td>
-                        </tr>
+                        <!-- Données de la table seront ajoutées dynamiquement par JavaScript -->
+
                   </tbody>
             </table>
 
@@ -115,8 +95,8 @@
                     </div>
 
                     <div class="form-group">
-                    <label for="bookYear">Année de publication:</label>
-                    <input type="text" id="bookYear" name="bookYear" placeholder="Entrer l'Année de publication" >
+                    <label for="bookPublicationYear">Année de publication:</label>
+                    <input type="text" id="bookPublicationYear" name="bookPublicationYear" placeholder="Entrer l'Année de publication" >
                     </div>
 
                     <div class="btn-group">
@@ -128,6 +108,8 @@
                     </div>
             </form>
       </main>
+
+        <script type="module" src="../js/book.js"></script>
 
 </body>
 </html>

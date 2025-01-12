@@ -11,7 +11,7 @@ const searchBtn = document.getElementById('searchBtn');
 let selectedAuthorId = null;
 
 // Chargement initial des auteurs
-document.addEventListener('DOMContentLoaded', loadAuthors);
+//document.addEventListener('DOMContentLoaded', loadAuthors);
 
 // Fonction pour charger et afficher les auteurs
 function loadAuthors()

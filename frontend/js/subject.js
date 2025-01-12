@@ -11,7 +11,7 @@ const searchBtn = document.getElementById('searchBtn');
 let selectedSubjectId = null;
 
 // Chargement initial des sujets
-document.addEventListener('DOMContentLoaded', loadSubjects);
+//document.addEventListener('DOMContentLoaded', loadSubjects);
 
 // Fonction pour charger et afficher les sujets
 function loadSubjects()

@@ -136,6 +136,26 @@ class API
         return this.makeRequest('GET', `${API_BASE_URL}/books?title=${title}`);
     }
 
+    static getBookByPrice(price)
+    {
+        return this.makeRequest('GET', `${API_BASE_URL}/books?maxPrice=${price}`);
+    }
+
+    static getBookBySubjectId(subjectId)
+    {
+        return this.makeRequest('GET', `${API_BASE_URL}/books?subjectId=${subjectId}`);
+    }
+
+    static getBookByAuthorId(authorId)
+    {
+        return this.makeRequest('GET', `${API_BASE_URL}/books?authorId=${authorId}`);
+    }
+
+    static getBookByISBN(isbn)
+    {
+        return this.makeRequest('GET', `${API_BASE_URL}/books?isbn=${isbn}`);
+    }
+
     static createBook(data)
     {
         return this.makeRequest('POST', `${API_BASE_URL}/books`, data);

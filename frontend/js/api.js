@@ -1,5 +1,6 @@
 // Configuration de l'API
-const API_BASE_URL = 'http://localhost:8080/api';
+//const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://localhost:8443/api';
 
 // Classe pour gérer les appels à l'API
 class API
@@ -9,7 +10,7 @@ class API
     {
         return new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
-            xhr.open(method, url, true);
+            xhr.open(method, url, true);// ouverture de la connexion
 
             if (data != null)// Si on a des données à envoyer
             {
@@ -18,14 +19,14 @@ class API
 
             }
 
-            xhr.onreadystatechange = function()
+            xhr.onreadystatechange = function()// Fonction de rappel appelée à chaque changement d'état de la requête
             {
-                if (xhr.readyState === 4)
+                if (xhr.readyState === 4)//si requete est terminée par 4=DONE
                 {
                     console.log('Response:', xhr.responseText);
-                    if (xhr.status >= 200 && xhr.status < 300)
+                    if (xhr.status >= 200 && xhr.status < 300)//Vérifie si le statut est dans la plage 200-299 (succès)
                     {
-                        // Convertir en JSON si possible, sinon retourner le texte
+                        // traitement de la réponse
                         try
                         {
                             const response = JSON.parse(xhr.responseText);
@@ -38,12 +39,12 @@ class API
                     }
                     else
                     {
-                        reject(new Error(`Request failed with status ${xhr.status}`));
+                        reject(new Error(`Request failed with status ${xhr.status}`)); //Si le statut n'est pas un succès, rejette la promesse avec une erreur
                     }
                 }
             };
 
-            xhr.onerror = () => reject(new Error('Request failed'));
+            xhr.onerror = () => reject(new Error('Request failed'));// Fonction de rappel appelée en cas d'erreur
             if (data)
             {
                 xhr.send(JSON.stringify(data));
